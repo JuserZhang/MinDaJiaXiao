@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.juserzhang.mindajiaxiao">
+
+    <!-- Include required permissions for Google Mobile Ads to run. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tubiao"
+        android:label="MinDaJiaXiao"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splashScreen"
+            android:label="民大驾校">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            android:name="MainActivity" >
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="Register">
+        </activity>
+        <activity
+            android:name=".PersionHome"
+            android:label="PersionHome">
+        </activity>
+        <activity
+            android:name=".Terms"
+            android:label="Terms">
+        </activity>
+        <activity
+            android:name=".Coach"
+            android:label="Coach">
+        </activity>
+        <activity
+            android:name=".Detail"
+            android:label="Detail">
+        </activity>
+         <activity android:name=".Submit"
+             android:label="Submit">
+
+         </activity>
+
+    </application>
+
+</manifest>

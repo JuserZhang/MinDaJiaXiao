@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@color/white"
+              android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->
+        <ImageButton
+            android:id="@+id/ib_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/diaphaneity"
+            android:clickable="false"
+            android:src="@drawable/home_32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主页"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_contacts"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ib_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/diaphaneity"
+            android:clickable="false"
+            android:src="@drawable/coach_32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通讯录"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_car"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ib_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/diaphaneity"
+            android:clickable="false"
+            android:src="@drawable/car_32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="约车"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_service"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ib_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/diaphaneity"
+            android:clickable="false"
+            android:src="@drawable/setting_32"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            />
+    </LinearLayout>
+
+</LinearLayout>
